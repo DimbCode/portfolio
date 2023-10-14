@@ -1,0 +1,27 @@
+// Header Styles
+
+.header {
+    width: 100%;
+    margin: 3.44rem 0;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__section {
+        
+        &:last-child {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+    }
+
+    &__link-list {
+        gap: 2.5rem;
+    }
+
+    &__link {
+        line-height: normal;
+    }
+}

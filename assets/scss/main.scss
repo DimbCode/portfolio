@@ -1,0 +1,34 @@
+// Imports Files
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jaldi&family=Roboto&display=swap');
+
+// Zeroing Out Files
+
+@import "ZeroingOut.scss";
+
+// Variables
+
+@import "variables.scss";
+
+// Started Styles Files
+
+@import "startedStyles.scss";
+
+// General Classes Files
+
+@import "generalClasses.scss";
+
+// Sections Files
+
+@import "sections/header.scss";
+@import "sections/home.scss";
+@import "sections/portfolio.scss";
+@import "sections/get-started.scss";
+@import "sections/designers.scss";
+@import "sections/questions.scss";
+@import "sections/qr-code.scss";
+@import "sections/footer.scss";
+
+// Adaptive Files
+
+@import "media.scss";

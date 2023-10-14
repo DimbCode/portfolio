@@ -1,0 +1,56 @@
+// Questions
+
+.questions {
+    width: 100%;
+    margin-bottom: 8.75rem;
+
+    &__header {
+        margin-bottom: 2.5rem;
+    }
+
+    &__items {
+        gap: 1.25rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+.question {
+    padding: 1.19rem 1.88rem;
+    border-radius: 0.3125rem;
+    border: 2px solid $gray2;
+
+    &__open-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        cursor: pointer;
+    }
+
+    &__name {
+        font-size: 1.125rem;
+        line-height: 120%;
+    }
+
+    &__hidden-section {
+        margin-top: 1.25rem;
+        padding-bottom: 1.94rem;
+        transition: .5s;
+    }
+
+    &__description {
+        line-height: 130%;
+    }
+
+    &__btn {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url("../images/plus-icon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        &_active {
+            background-image: url("../images/minus-icon.svg");
+        }
+    }
+}
