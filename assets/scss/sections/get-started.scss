@@ -1,0 +1,46 @@
+// Get-started Styles
+
+.get-started {
+    width: 100%;
+    padding: 5rem 0;
+
+    &__container {
+        min-height: 36rem;
+        height: 36rem;
+        background: $darkBlack;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        gap: 5rem;
+    }
+
+    &__section {
+        width: 100%;
+    }
+
+    &__offer {
+
+        .offer__subtitle {
+            font-family: $firstFont;
+        }
+    }
+
+    &__achivements-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.63rem;
+    }
+
+    &__achivement-item {
+        border-bottom: 1px solid $white;
+        padding: 1rem;
+    }
+
+    &__achivement-text {
+        font-size: 3rem;
+        line-height: 115%;
+        letter-spacing: -0.12rem;
+    }
+}

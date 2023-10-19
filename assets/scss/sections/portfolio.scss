@@ -1,0 +1,69 @@
+// Portfolio Styles
+
+.portfolio {
+    width: 100%;
+    background: $gray3;
+    padding: 5rem 0;
+
+    &__header {
+        justify-content: space-between;
+        margin-bottom: 2.62rem;
+    }
+
+    &__btn {
+        @extend %btn;
+    }
+
+    &__items {
+        grid-template-areas: "firstItem secondItem"
+                             "thirdItem thirdItem";
+        gap: 2rem;
+    }
+
+    &__item {
+
+        &:nth-child(1) {
+            grid-area: firstItem;
+        }
+
+        &:nth-child(2) {
+            grid-area: secondItem;
+        }
+
+        &:nth-child(3) {
+            grid-area: thirdItem;
+        }
+    }
+}
+
+.portfolio-item {
+
+    &__img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__tag-item {
+        border-radius: 2rem;
+        border: 1px solid $white;
+        padding: 0.5rem 1rem;
+    }
+
+    &__tag-text {
+        font-size: 0.875rem;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        font-size: 1.25rem;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+}

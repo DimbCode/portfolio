@@ -1,56 +1,43 @@
-// Questions
+// Questions Styles
 
 .questions {
     width: 100%;
-    margin-bottom: 8.75rem;
-
-    &__header {
-        margin-bottom: 2.5rem;
-    }
+    padding: 4rem 0 12.19rem 0;
 
     &__items {
-        gap: 1.25rem;
-        grid-template-columns: 1fr;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .question {
-    padding: 1.19rem 1.88rem;
-    border-radius: 0.3125rem;
-    border: 2px solid $gray2;
 
     &__open-section {
+        padding: 2rem 0;
+        border-bottom: 1px solid $white;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
-        cursor: pointer;
     }
 
     &__name {
-        font-size: 1.125rem;
-        line-height: 120%;
+        font-size: 3rem;
+        font-weight: $medium;
+        letter-spacing: -0.12rem;
+        line-height: 115%;
+    }
+
+    &__open-btn {
+        font-size: 2rem;
+        font-weight: $medium;
+        line-height: 115%;
+        letter-spacing: -0.04rem;
     }
 
     &__hidden-section {
-        margin-top: 1.25rem;
-        padding-bottom: 1.94rem;
-        transition: .5s;
     }
 
-    &__description {
-        line-height: 130%;
-    }
-
-    &__btn {
-        width: 1.75rem;
-        height: 1.75rem;
-        background-image: url("../images/plus-icon.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-
-        &_active {
-            background-image: url("../images/minus-icon.svg");
-        }
+    &__text {
     }
 }

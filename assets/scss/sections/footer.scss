@@ -1,0 +1,62 @@
+// Footer Styles
+
+.footer {
+    width: 100%;
+    padding: 5rem 0;
+    background: $black;
+
+    &__container {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2.5rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+
+    &__link-list {
+
+        & > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__link-item {
+
+        &:first-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__link-list-title {
+        font-size: 1.25rem;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        font-size: 1rem;
+        line-height: 150%;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 0;
+            background: $white;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .5s;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+}

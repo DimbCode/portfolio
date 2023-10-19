@@ -1,0 +1,25 @@
+// Qr-code Styles
+
+.qr-code {
+    height: 52rem;
+    min-height: 52rem;
+    padding: 7.5rem 0;
+    background: linear-gradient(180deg, #B72E40 0%, #0F1015 54.6%);
+    border-radius: 2rem 2rem 0 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 7.5rem;
+    }
+
+    &__section {
+        width: 100%;
+    }
+
+    &__img {
+        width: 31.49438rem;
+    }
+}

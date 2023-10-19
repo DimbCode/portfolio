@@ -2,10 +2,25 @@
 
 .header {
     width: 100%;
-    margin: 3.44rem 0;
+    position: absolute;
+    top: 2.38rem;
+    left: 0;
 
     &__container {
         justify-content: space-between;
+        border: 1px solid $gray2;
+        border-radius: 2rem;
+        padding: 1.5rem 4rem;
+    }
+
+    &__logo-text {
+        font-family: $secondFont;
+        line-height: 1.1875rem;
+        letter-spacing: -0.02rem;
+    }
+
+    &__nav {
+        width: 100%;
     }
 
     &__section {
@@ -18,10 +33,53 @@
     }
 
     &__link-list {
-        gap: 2.5rem;
+        gap: 2rem;
     }
 
     &__link {
-        line-height: normal;
+        font-family: $secondFont;
+        font-weight: $medium;
+        line-height: 1.1875rem;
+        letter-spacing: -0.02rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 0;
+            background: $white;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .5s;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    &__contact-btn {
+        font-family: $secondFont;
+        font-weight: $medium;
+        line-height: 1.1875rem;
+        letter-spacing: -0.02rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.62rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 0.75rem;
+            width: 0.75rem;
+            background-image: url("../images/arrow-right.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
     }
 }
